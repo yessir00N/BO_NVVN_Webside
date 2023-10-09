@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10 px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background: #16213E;
+}
+
+a,a:visited, a:link{
+    color: #eee;
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    background: rgba(15, 52, 96, 0.7);
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+    color: #eee;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10rem;
+    padding: 2rem;
+    margin-top: 12rem;
+  }
+  
+  .grid-container > ul {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10rem 0;
+    font-size: 3rem;
+  }
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}  
