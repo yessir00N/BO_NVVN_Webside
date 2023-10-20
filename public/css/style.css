@@ -41,6 +41,11 @@ a,a:visited, a:link{
     gap: 4rem;
 }
 
+.nav__img {
+   width: 10rem;
+   height: 10rem;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
