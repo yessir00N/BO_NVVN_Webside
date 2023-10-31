@@ -1,9 +1,14 @@
+<?php
+include_once("../source/Connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <script defer src="js/main.js" type="module"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <nav class="nav">
@@ -19,8 +24,15 @@
 
 </body>
 <ul class="grid-container">
-    <ul class="item1"></ul>
+    <?php
+        $rows = $conn->query("SELECT * FROM sdg ORDER BY title");
+        foreach($rows as $row) {
+            include("../source/templates/sdg.php");
+        }
+    ?>
+    
+    <!--<ul class="item1"></ul>
     <ul class="item2"></ul>
-    <ul class="item3"></ul>
+    <ul class="item3"></ul>-->
 </ul>
 </html>
