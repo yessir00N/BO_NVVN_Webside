@@ -42,8 +42,7 @@ a,a:visited, a:link{
 }
 
 .nav__img {
-   width: 10rem;
-   height: 10rem;
+    width: 40rem;
 }
 
 .grid-container {
