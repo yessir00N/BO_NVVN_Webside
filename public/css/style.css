@@ -15,7 +15,7 @@ html {
 body {
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
-    background: #16213E;
+    background: #42803f;
 }
 
 a,a:visited, a:link{
@@ -25,7 +25,7 @@ a,a:visited, a:link{
 
 .nav {
     width: 100%;
-    background: rgba(15, 52, 96, 0.7);
+    background: rgba(20, 121, 245, 0.7);
     display: flex;
     justify-content: space-between;
     min-height: 7rem;
