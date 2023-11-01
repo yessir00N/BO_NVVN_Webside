@@ -65,6 +65,15 @@ a,a:visited, a:link{
   grid-column-end: 2;
 }  
 
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }  
+
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}  
 .sdg {
     display: none;
 }

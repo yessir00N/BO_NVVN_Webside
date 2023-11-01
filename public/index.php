@@ -16,7 +16,6 @@ include_once("../source/Connect.php");
     <ul class="list">
         <li class="listitem"><a href="#Menu"></a>Menu</li>
         <li class="listitem"><a href="#Over"></a>Over</li>
-        <li class="listitem"><a href="#gallerij"></a></li>
     </ul>
 
 </nav>
@@ -30,9 +29,5 @@ include_once("../source/Connect.php");
             include("../source/templates/sdg.php");
         }
     ?>
-    
-    <!--<ul class="item1"></ul>
-    <ul class="item2"></ul>
-    <ul class="item3"></ul>-->
 </ul>
 </html>
