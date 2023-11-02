@@ -1,8 +1,19 @@
-const sdg1 = document.getElementById("sdg15");
-sdg1.style.display = "block";
+const sdgs = document.getElementsByClassName("sdg");
+const sdgsShuffled = Array.from(sdgs).sort(() => Math.random() - 0.5)
+let backbutton = document.getElementById("back-button")
 
-const sdg2 = document.getElementById("sdg1");
-sdg2.style.display = "block";
+for (let i = 0; i < 3; i++) {
+    let sdg = sdgsShuffled[i];
 
-const sdg3 = document.getElementById("sdg7");
-sdg3.style.display = "block";
+    sdg.style.display = "flex"
+
+    sdg.onclick = function() {
+        let modal = document.getElementById(`modal-${sdg.id}`);
+        modal.style.display = "flex"
+
+        for (let i = 0; i < sdgs.length; i++) {
+            console.log(sdgs[i]);
+            sdgs[i].style.display = "none";
+        }
+    }
+}

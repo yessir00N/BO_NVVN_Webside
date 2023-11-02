@@ -13,18 +13,13 @@ include_once("../source/Connect.php");
 </head>
 <nav class="nav">
     <img src="img/NVVN2.png" class="nav__img" alt="">
-    <ul class="list">
-        <li class="listitem"><a href="#Menu"></a>Menu</li>
-        <li class="listitem"><a href="#Over"></a>Over</li>
-    </ul>
-
 </nav>
 <body>
 
 </body>
 <ul class="grid-container">
     <?php
-        $rows = $conn->query("SELECT * FROM sdg ORDER BY title");
+        $rows = $conn->query("SELECT * FROM sdg ORDER BY Id");
         foreach($rows as $row) {
             include("../source/templates/sdg.php");
         }

@@ -25,7 +25,7 @@ a,a:visited, a:link{
 
 .nav {
     width: 100%;
-    background: rgba(20, 121, 245, 0.7);
+    background: rgb(39,143,209);
     display: flex;
     justify-content: space-between;
     min-height: 7rem;
@@ -76,4 +76,41 @@ a,a:visited, a:link{
 }  
 .sdg {
     display: none;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 1.5rem;
+}
+
+.sdg-img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.sdg-modal {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.modal-title{
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.modal-content{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.modal-img{
+    margin-top: 10rem;
+    width: 35rem;
+    height: auto;
+
+}
+
+.modal-button{
+    margin-top: 10rem;
+    width: 10rem;
+    height: 10rem;
 }
